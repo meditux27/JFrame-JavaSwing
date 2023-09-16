@@ -26,6 +26,8 @@ Algunas características clave de `JFrame`:
 
 Algunos de los métodos más comunes de la clase `JFrame` en Java Swing, que se utilizan con frecuencia para configurar y trabajar con ventanas en aplicaciones gráficas son los siguientes:
 
+---
+
 > :beginner: setTitle
 
 - Descripción
@@ -80,29 +82,29 @@ Agregar setTitle
 
 ---
 
-> :beginner: setTitle
+> :beginner: setDefaultCloseOperation(int operation)
 
 - Descripción
 
-Establece el título de la ventana
+Configura el comportamiento de cierre de la ventana
 
 - Sintaxis
 
-frame.setTitle(" texto ");
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 - Nota
 
-Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setTitle(" texto ")
+Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 Crear un JFrame  
 `JFrame frame = new JFrame();`
 
 Agregar setTitle  
-`frame.setTitle("Titulo de la ventana");`
+`frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);`
 
 - Ejemplo
 
-[setTitle](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
+[setDefaultCloseOperation](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/setDefaultCloseOperation.java)
 
 ---
 
