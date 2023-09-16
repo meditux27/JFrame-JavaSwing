@@ -50,4 +50,6 @@ Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar
 
 [ setTitle]( https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
 
+[setTitle2](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample2.java)
+
 ---
