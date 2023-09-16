@@ -1,8 +1,8 @@
 package Example;
-
+//Copiar codigo desde aqui
 import javax.swing.JFrame;
 
-public class JFrameSetTitleExample2 {
+public class JFrameSetTitleExample2 {//Modificar el nombre de la clase a su preferencia o realizar una nueva clase con el nombre presente
 	 public static void main(String[] args) {
 	        // Crear un nuevo JFrame y agregar el título al mismo tiempo, sin utilizar setTitle
 	        JFrame frame = new JFrame("Título de la ventana");
