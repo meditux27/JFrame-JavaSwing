@@ -1,8 +1,8 @@
 package Example;
-
+//Copiar codigo desde aqui
 import javax.swing.JFrame;
 
-public class JFrameSetTitleExample {
+public class JFrameSetTitleExample {//Modificar el nombre de la clase a su preferencia o realizar una nueva clase con el nombre presente
 	 public static void main(String[] args) {
 	        // Crear un nuevo JFrame
 	        JFrame frame = new JFrame();
