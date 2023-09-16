@@ -6,7 +6,7 @@
 
 ---
 
-[Estructura basica](https://github.com/meditux27/JFrame-JavaSwing/blob/main/MiVentana.java)
+[Estructura basica](https://github.com/meditux27/JFrame-JavaSwing/blob/main/principal/MiVentana.java)
 
 Algunas características clave de `JFrame`:
 
