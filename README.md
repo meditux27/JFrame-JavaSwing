@@ -6,11 +6,7 @@
 
 ---
 
-
-
 [Estructura basica](https://github.com/meditux27/JFrame-JavaSwing/blob/main/MiVentana.java)
-
-
 
 Algunas características clave de `JFrame`:
 
@@ -28,11 +24,7 @@ Algunas características clave de `JFrame`:
 
 7. **Cierre de la Aplicación**: Cuando un JFrame se cierra, puedes controlar si la aplicación completa debe cerrarse o simplemente ocultarse. Esto se puede configurar utilizando métodos como `setDefaultCloseOperation()`.
 
-
-
 Algunos de los métodos más comunes de la clase `JFrame` en Java Swing, que se utilizan con frecuencia para configurar y trabajar con ventanas en aplicaciones gráficas son los siguientes:
-
-
 
 > :beginner: setTitle
 
@@ -54,16 +46,8 @@ Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar
 <sub>Agregar setTitle </sub>  
 `frame.setTitle("Titulo de la ventana");`
 
-
-
 - Ejemplo
 
-[ add.(component)]( https://github.com/meditux27/Jpanel-Java/blob/main/addComponentExample.java )
+[ setTitle]( https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
 
 ---
-
-
-
-
-
-
