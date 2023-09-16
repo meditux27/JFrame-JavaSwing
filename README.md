@@ -108,29 +108,31 @@ Agregar setTitle
 
 ---
 
-> :beginner: setTitle
+> :beginner: setVisible
 
 - Descripción
 
-Establece el título de la ventana
+Hace que la ventana sea visible o invisible
 
 - Sintaxis
 
-frame.setTitle(" texto ");
+frame.setVisible(boolean);
 
 - Nota
 
-Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setTitle(" texto ")
+Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setVisble(true), por default java tiene a utilizar el valor false, por lo cual se requiere establecerlo en true
 
 Crear un JFrame  
 `JFrame frame = new JFrame();`
 
 Agregar setTitle  
-`frame.setTitle("Titulo de la ventana");`
+`frame.setVisible(true);`
 
 - Ejemplo
 
-[setTitle](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
+[setVisible](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/setVissible.java)
+
+[setVisible2](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/setVissible2.java)
 
 ---
 
