@@ -53,3 +53,161 @@ Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar
 [setTitle2](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample2.java)
 
 ---
+
+> :beginner: setSize(int width, int height)
+
+- Descripción
+
+Establece el tamaño inicial de la ventana en píxeles
+
+- Sintaxis
+
+frame.setSize(800,600);
+
+- Nota
+
+Para el uso del metodo setSize se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setSize(400,400)
+
+Crear un JFrame  
+`JFrame frame = new JFrame();`
+
+Agregar setTitle  
+`frame.setSize(400,400);`
+
+- Ejemplo
+
+[setSize](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetSize.java)
+
+---
+
+> :beginner: setTitle
+
+- Descripción
+
+Establece el título de la ventana
+
+- Sintaxis
+
+frame.setTitle(" texto ");
+
+- Nota
+
+Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setTitle(" texto ")
+
+Crear un JFrame  
+`JFrame frame = new JFrame();`
+
+Agregar setTitle  
+`frame.setTitle("Titulo de la ventana");`
+
+- Ejemplo
+
+[setTitle](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
+
+---
+
+> :beginner: setTitle
+
+- Descripción
+
+Establece el título de la ventana
+
+- Sintaxis
+
+frame.setTitle(" texto ");
+
+- Nota
+
+Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setTitle(" texto ")
+
+Crear un JFrame  
+`JFrame frame = new JFrame();`
+
+Agregar setTitle  
+`frame.setTitle("Titulo de la ventana");`
+
+- Ejemplo
+
+[setTitle](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
+
+---
+
+> :beginner: setTitle
+
+- Descripción
+
+Establece el título de la ventana
+
+- Sintaxis
+
+frame.setTitle(" texto ");
+
+- Nota
+
+Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setTitle(" texto ")
+
+Crear un JFrame  
+`JFrame frame = new JFrame();`
+
+Agregar setTitle  
+`frame.setTitle("Titulo de la ventana");`
+
+- Ejemplo
+
+[setTitle](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
+
+---
+
+> :beginner: setTitle
+
+- Descripción
+
+Establece el título de la ventana
+
+- Sintaxis
+
+frame.setTitle(" texto ");
+
+- Nota
+
+Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setTitle(" texto ")
+
+Crear un JFrame  
+`JFrame frame = new JFrame();`
+
+Agregar setTitle  
+`frame.setTitle("Titulo de la ventana");`
+
+- Ejemplo
+
+[setTitle](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
+
+---
+
+> :beginner: setTitle
+
+- Descripción
+
+Establece el título de la ventana
+
+- Sintaxis
+
+frame.setTitle(" texto ");
+
+- Nota
+
+Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setTitle(" texto ")
+
+Crear un JFrame  
+`JFrame frame = new JFrame();`
+
+Agregar setTitle  
+`frame.setTitle("Titulo de la ventana");`
+
+- Ejemplo
+
+[setTitle](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
+
+---
+
+
