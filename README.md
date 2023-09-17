@@ -1,6 +1,6 @@
 # JFrame - JavaSwing
 
-![JFrame](https://www.onworks.net/imagescropped/defaulticon.png_3.webp) 
+![JFrame](https://www.onworks.net/imagescropped/defaulticon.png_3.webp) <img title="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTjottlnIzfylXY6zxHx-M8YdpnoMw-oxaPSU58H5X1jrNs5vmCK0e9aeMX8SUtpi1KM&usqp=CAU" alt="" data-align="inline" width="265">
 
 ##### Frame es una clase en la biblioteca de Java Swing que representa una ventana de nivel superior en una interfaz gráfica de usuario (GUI). La ventana JFrame puede contener y organizar otros componentes de Swing, como botones, etiquetas, campos de texto, paneles y más.
 
@@ -136,7 +136,52 @@ Agregar setTitle
 
 ---
 
-> :beginner: setTitle
+> :beginner: setLayout
+
+- Descripción
+
+Establece el administrador de diseño para organizar los componentes dentro del JFrame
+
+- Sintaxis
+1. Creando la instancia de layout manager y asignando el nombre de la variable donde se guardo la instancia
+
+`GridLayout diseno = new GridLayout(3, 3);`
+
+`panel.setLayout(diseno);`
+
+2. Agregando directamente al panel mediante la instancia
+
+`JPanel panel = new JPanel(new GridLayout(2, 3));`
+
+- Nota
+
+Entre los mas utilizados se encuentran `FlowLayout|GridLayout|BorderLayout`
+
+1. FlowLayout
+
+*Organiza los componentes en una fila horizontal o vertical, ajustándolos automáticamente a medida que se agregan. Es útil para diseños simples de una fila o una columna de componentes.*
+
+2. *BorderLayout*
+
+*Divide el contenedor en cinco áreas: norte, sur, este, oeste y centro. Cada área puede contener un solo componente, y los componentes se expanden para llenar su área asignada.*
+
+3. *GridLayout*
+
+*Organiza los componentes en una cuadrícula de filas y columnas de tamaño fijo. Todos los componentes en un GridLayout tienen el mismo tamaño.*
+
+- Ejemplo
+
+
+
+[FlowLayout](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/FlowLayoutExample.java)
+
+[BorderLayout](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/BorderLayoutExample.java)
+
+[GridLayout](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/GridLayoutExample.java)
+
+---
+
+> :beginner: Pendiente
 
 - Descripción
 
@@ -187,31 +232,3 @@ Agregar setTitle
 [setTitle](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
 
 ---
-
-> :beginner: setTitle
-
-- Descripción
-
-Establece el título de la ventana
-
-- Sintaxis
-
-frame.setTitle(" texto ");
-
-- Nota
-
-Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setTitle(" texto ")
-
-Crear un JFrame  
-`JFrame frame = new JFrame();`
-
-Agregar setTitle  
-`frame.setTitle("Titulo de la ventana");`
-
-- Ejemplo
-
-[setTitle](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
-
----
-
-
