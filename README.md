@@ -283,7 +283,7 @@ Agregar setTitle
 
 - Descripción
 
-Agrega un componente (como un JPanel, JButton, etc.) al JFrame
+Se utiliza para registrar un objeto que escuchará eventos relacionados con la ventana, como eventos de apertura, cierre, activación, desactivación y otros eventos relacionados con la ventana.
 
 - Sintaxis
 
@@ -291,17 +291,39 @@ frame.add(new JButton("Mi Botón"));
 
 - Nota
 
-Para el uso del metodo add se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .add( componente) para asociarlo
+La interfaz `WindowListener` define varios métodos que puedes implementar para manejar diferentes tipos de eventos de ventana. Estos métodos incluyen:
 
-Crear un JFrame  
-`JFrame frame = new JFrame();`
+1. `windowOpened(WindowEvent e)`: Se llama cuando la ventana se abre.
+2. `windowClosing(WindowEvent e)`: Se llama cuando el usuario intenta cerrar la ventana.
+3. `windowClosed(WindowEvent e)`: Se llama después de que la ventana se haya cerrado.
+4. `windowIconified(WindowEvent e)`: Se llama cuando la ventana se minimiza.
+5. `windowDeiconified(WindowEvent e)`: Se llama cuando la ventana se restaura desde un estado minimizado.
+6. `windowActivated(WindowEvent e)`: Se llama cuando la ventana se activa.
+7. `windowDeactivated(WindowEvent e)`: Se llama cuando la ventana se desactiva.
 
-Agregar setTitle  
-`frame.add(componente);`
+Para usar `addWindowListener`, primero debes agregar una instancia de la clase como oyente de eventos de ventana utilizando `addWindowListener`, posteriormente se crea una instancia anónima de una clase que implementa la interfaz `WindowListener`, esto con el proposito de crear una manera conveniente de trabajar con eventos de ventana, cuando solo necesitas manejar algunos de ellos y no todos.
+
+A continuación se proporcionar una implementación de sobrecarga para los métodos que desees manejar ejemplo: `windowClosing(WindowEvent e){ }`
+
+
 
 - Ejemplo
 
-[add ()](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+[windowOpened(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploWindowOpened.java)
+
+[windowClosing(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploWindowClosing.java)
+
+[windowClosed(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+
+[windowIconified(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+
+[windowDeiconified(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+
+[windowActivated(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+
+[windowDeactivated(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+
+
 
 ---
 
