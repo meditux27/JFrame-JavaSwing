@@ -231,21 +231,21 @@ Para el uso del metodo `pack ();`, es conveniente utilizar layout manager para q
 
 - Descripción
 
-Agrega un componente (como un JPanel, JButton, etc.) al JFrame
+Permite o impide que el usuario cambie el tamaño de la ventana.
 
 - Sintaxis
 
-frame.add(new JButton("Mi Botón"));
+frame.setResizable(boolean);
 
 - Nota
 
-Para el uso del metodo add se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .add( componente) para asociarlo
+Para el uso del metodo `setResizable` se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar `.setResizable(true);` 
 
 Crear un JFrame  
 `JFrame frame = new JFrame();`
 
 Agregar setTitle  
-`frame.add(componente);`
+`frame.setResizable(true);`
 
 - Ejemplo
 
@@ -257,25 +257,25 @@ Agregar setTitle
 
 - Descripción
 
-Agrega un componente (como un JPanel, JButton, etc.) al JFrame
+Establece la posición al generar la ventana 
 
 - Sintaxis
 
-frame.add(new JButton("Mi Botón"));
+.setLocationRelativeTo(null);
 
 - Nota
 
-Para el uso del metodo add se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .add( componente) para asociarlo
+Coloca la ventana en una posición relativa a otro componente (por lo general, `null` para centrarla en la pantalla).
 
 Crear un JFrame  
 `JFrame frame = new JFrame();`
 
 Agregar setTitle  
-`frame.add(componente);`
+`frame.setLocationRRelativeTo(null);`
 
 - Ejemplo
 
-[add ()](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+[setLocationRelativeTo](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/setLocationRelativeTo.java)
 
 ---
 
