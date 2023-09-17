@@ -4,7 +4,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-//Agregar el nombre de la clase o realizar una nueva clase con el nombre SetBeckground
+//Agregar el nombre de la clase o realizar una nueva clase con el nombre presente 
 public class addComponentExample {
 	public static void main(String[] args) {
 		//Creación de Jframe
