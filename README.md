@@ -171,8 +171,6 @@ Entre los mas utilizados se encuentran `FlowLayout|GridLayout|BorderLayout`
 
 - Ejemplo
 
-
-
 [FlowLayout](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/FlowLayoutExample.java)
 
 [BorderLayout](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/BorderLayoutExample.java)
@@ -181,29 +179,29 @@ Entre los mas utilizados se encuentran `FlowLayout|GridLayout|BorderLayout`
 
 ---
 
-> :beginner: Pendiente
+> :beginner: add(Component comp)
 
 - Descripción
 
-Establece el título de la ventana
+Agrega un componente (como un JPanel, JButton, etc.) al JFrame
 
 - Sintaxis
 
-frame.setTitle(" texto ");
+frame.add(new JButton("Mi Botón"));
 
 - Nota
 
-Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setTitle(" texto ")
+Para el uso del metodo add se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .add( componente) para asociarlo 
 
 Crear un JFrame  
 `JFrame frame = new JFrame();`
 
 Agregar setTitle  
-`frame.setTitle("Titulo de la ventana");`
+`frame.add(componente);`
 
 - Ejemplo
 
-[setTitle](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
+[add ()](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
 
 ---
 
