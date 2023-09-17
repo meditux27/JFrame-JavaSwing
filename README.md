@@ -205,28 +205,24 @@ Agregar setTitle
 
 ---
 
-> :beginner: setTitle
+> :beginner: pack( )
 
 - Descripción
 
-Establece el título de la ventana
+Ajusta automáticamente el tamaño de la ventana para que se ajuste a los componentes que contiene
 
 - Sintaxis
 
-frame.setTitle(" texto ");
+frame.pack( );
 
 - Nota
 
-Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .setTitle(" texto ")
+Para el uso del metodo `pack ();`, es conveniente utilizar layout manager para que los componentes tenga una administración del espacio interno y posteriormente utilizar el metodo `pack ();` al final del listado de componentes agregados a JFrame 
 
-Crear un JFrame  
-`JFrame frame = new JFrame();`
 
-Agregar setTitle  
-`frame.setTitle("Titulo de la ventana");`
 
 - Ejemplo
 
-[setTitle](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
+[pack () ;](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JframePack.java)
 
 ---
