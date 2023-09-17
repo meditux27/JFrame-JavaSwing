@@ -205,7 +205,7 @@ Agregar setTitle
 
 ---
 
-> :beginner: pack( )
+> :beginner: pack
 
 - Descripción
 
@@ -226,3 +226,103 @@ Para el uso del metodo `pack ();`, es conveniente utilizar layout manager para q
 [pack () ;](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JframePack.java)
 
 ---
+
+> :beginner: setResizable
+
+- Descripción
+
+Agrega un componente (como un JPanel, JButton, etc.) al JFrame
+
+- Sintaxis
+
+frame.add(new JButton("Mi Botón"));
+
+- Nota
+
+Para el uso del metodo add se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .add( componente) para asociarlo
+
+Crear un JFrame  
+`JFrame frame = new JFrame();`
+
+Agregar setTitle  
+`frame.add(componente);`
+
+- Ejemplo
+
+[setResizable](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JframeSetResizable.java)
+
+---
+
+> :beginner: setLocationRelativeTo
+
+- Descripción
+
+Agrega un componente (como un JPanel, JButton, etc.) al JFrame
+
+- Sintaxis
+
+frame.add(new JButton("Mi Botón"));
+
+- Nota
+
+Para el uso del metodo add se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .add( componente) para asociarlo
+
+Crear un JFrame  
+`JFrame frame = new JFrame();`
+
+Agregar setTitle  
+`frame.add(componente);`
+
+- Ejemplo
+
+[add ()](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+
+---
+
+> :beginner: addWindowListener
+
+- Descripción
+
+Agrega un componente (como un JPanel, JButton, etc.) al JFrame
+
+- Sintaxis
+
+frame.add(new JButton("Mi Botón"));
+
+- Nota
+
+Para el uso del metodo add se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .add( componente) para asociarlo
+
+Crear un JFrame  
+`JFrame frame = new JFrame();`
+
+Agregar setTitle  
+`frame.add(componente);`
+
+- Ejemplo
+
+[add ()](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+
+---
+
+> :beginner: dispose
+
+- Descripción
+
+Agrega un componente (como un JPanel, JButton, etc.) al JFrame
+
+- Sintaxis
+
+frame.add(new JButton("Mi Botón"));
+
+- Nota
+
+Para el uso del metodo add se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .add( componente) para asociarlo
+
+Crear un JFrame  
+`JFrame frame = new JFrame();`
+
+Agregar setTitle  
+`frame.add(componente);`
+
+- Ejemplo
