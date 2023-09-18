@@ -323,7 +323,7 @@ A continuación se proporcionar una implementación de sobrecarga para los méto
 
 [windowDeiconified(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploDeiconify.java)
 
-[windowActivated(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+[windowActivated(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploWindowActivated.java)
 
 [windowDeactivated(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
 
