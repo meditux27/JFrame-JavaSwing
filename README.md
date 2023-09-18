@@ -201,7 +201,7 @@ Agregar setTitle
 
 - Ejemplo
 
-[add ()](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+[add ](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
 
 ---
 
@@ -218,8 +218,6 @@ frame.pack( );
 - Nota
 
 Para el uso del metodo `pack ();`, es conveniente utilizar layout manager para que los componentes tenga una administración del espacio interno y posteriormente utilizar el metodo `pack ();` al final del listado de componentes agregados a JFrame 
-
-
 
 - Ejemplo
 
@@ -296,6 +294,8 @@ La interfaz `WindowListener` define varios métodos que puedes implementar para 
 1. `windowOpened(WindowEvent e)`: Se llama cuando la ventana se abre.
 2. `windowClosing(WindowEvent e)`: Se llama cuando el usuario intenta cerrar la ventana.
 3. `windowClosed(WindowEvent e)`: Se llama después de que la ventana se haya cerrado.
+   
+   `windowClosing` se utiliza para tomar decisiones antes de que la ventana se cierre y permite la posibilidad de cancelar el cierre, mientras que `windowClosed` se llama después de que la ventana ya está cerrada y se utiliza para realizar tareas posteriores al cierre.
 4. `windowIconified(WindowEvent e)`: Se llama cuando la ventana se minimiza.
 5. `windowDeiconified(WindowEvent e)`: Se llama cuando la ventana se restaura desde un estado minimizado.
 6. `windowActivated(WindowEvent e)`: Se llama cuando la ventana se activa.
@@ -305,15 +305,13 @@ Para usar `addWindowListener`, primero debes agregar una instancia de la clase c
 
 A continuación se proporcionar una implementación de sobrecarga para los métodos que desees manejar ejemplo: `windowClosing(WindowEvent e){ }`
 
-
-
 - Ejemplo
 
 [windowOpened(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploWindowOpened.java)
 
 [windowClosing(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploWindowClosing.java)
 
-[windowClosed(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+[windowClosed(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploWindowClosed.java)
 
 [windowIconified(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
 
@@ -322,8 +320,6 @@ A continuación se proporcionar una implementación de sobrecarga para los méto
 [windowActivated(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
 
 [windowDeactivated(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
-
-
 
 ---
 
