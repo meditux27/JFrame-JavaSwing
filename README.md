@@ -130,9 +130,9 @@ Agregar setTitle
 
 - Ejemplo
 
-[setVisible](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/setVissible.java)
+[setVisible](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/setVisible.java)
 
-[setVisible2](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/setVissible2.java)
+[setVisible2](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/setVisible2.java)
 
 ---
 
@@ -292,13 +292,19 @@ frame.add(new JButton("Mi Botón"));
 La interfaz `WindowListener` define varios métodos que puedes implementar para manejar diferentes tipos de eventos de ventana. Estos métodos incluyen:
 
 1. `windowOpened(WindowEvent e)`: Se llama cuando la ventana se abre.
+
 2. `windowClosing(WindowEvent e)`: Se llama cuando el usuario intenta cerrar la ventana.
+
 3. `windowClosed(WindowEvent e)`: Se llama después de que la ventana se haya cerrado.
    
    `windowClosing` se utiliza para tomar decisiones antes de que la ventana se cierre y permite la posibilidad de cancelar el cierre, mientras que `windowClosed` se llama después de que la ventana ya está cerrada y se utiliza para realizar tareas posteriores al cierre.
+
 4. `windowIconified(WindowEvent e)`: Se llama cuando la ventana se minimiza.
+
 5. `windowDeiconified(WindowEvent e)`: Se llama cuando la ventana se restaura desde un estado minimizado.
+
 6. `windowActivated(WindowEvent e)`: Se llama cuando la ventana se activa.
+
 7. `windowDeactivated(WindowEvent e)`: Se llama cuando la ventana se desactiva.
 
 Para usar `addWindowListener`, primero debes agregar una instancia de la clase como oyente de eventos de ventana utilizando `addWindowListener`, posteriormente se crea una instancia anónima de una clase que implementa la interfaz `WindowListener`, esto con el proposito de crear una manera conveniente de trabajar con eventos de ventana, cuando solo necesitas manejar algunos de ellos y no todos.
@@ -315,7 +321,7 @@ A continuación se proporcionar una implementación de sobrecarga para los méto
 
 [windowIconified(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/MinimizeWindowExample2.java)
 
-[windowDeiconified(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+[windowDeiconified(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploDeiconify.java)
 
 [windowActivated(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
 
