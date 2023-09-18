@@ -333,20 +333,24 @@ A continuación se proporcionar una implementación de sobrecarga para los méto
 
 - Descripción
 
-Agrega un componente (como un JPanel, JButton, etc.) al JFrame
+Se utiliza para liberar los recursos asociados a una ventana o diálogo y cerrarla
 
 - Sintaxis
 
-frame.add(new JButton("Mi Botón"));
+frame.dispose();
 
 - Nota
 
-Para el uso del metodo add se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar .add( componente) para asociarlo
+Para el uso del metodo add se debe instanciar JFrame, posteriormente llamar la variable asignada y agregar el metodo
+
+Es importante destacar que `dispose()` libera los recursos asociados a la ventana y la cierra, pero no termina la aplicación por completo. Si tienes más ventanas o componentes en tu aplicación, la aplicación seguirá en ejecución. Si deseas cerrar la aplicación por completo, puedes utilizar `System.exit(0)` o cerrar todas las ventanas principales.
 
 Crear un JFrame  
 `JFrame frame = new JFrame();`
 
 Agregar setTitle  
-`frame.add(componente);`
+`frame.dispose();`
 
 - Ejemplo
+
+[dispose](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploDispose.java)
