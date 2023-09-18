@@ -22,8 +22,8 @@ public class EjemploWindowDeactivated {//Modificar el nombre de la clase a su pr
         frame.addWindowListener(new WindowAdapter() {
             @Override
             public void windowDeactivated(WindowEvent e) {
-                // Este método se llama cuando la ventana se activa
-                System.out.println("La ventana se ha activado.");
+                // Este método se llama cuando la ventana se desactiva
+                System.out.println("La ventana se ha desactivado.");
             }
         });
       //Agregando etiqueta para descripción 
