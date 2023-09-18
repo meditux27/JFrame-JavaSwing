@@ -313,7 +313,7 @@ A continuación se proporcionar una implementación de sobrecarga para los méto
 
 [windowClosed(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploWindowClosed.java)
 
-[windowIconified(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
+[windowIconified(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/MinimizeWindowExample2.java)
 
 [windowDeiconified(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
 
