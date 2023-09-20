@@ -2,7 +2,7 @@
 
 ![JFrame](https://www.onworks.net/imagescropped/defaulticon.png_3.webp) <img title="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTjottlnIzfylXY6zxHx-M8YdpnoMw-oxaPSU58H5X1jrNs5vmCK0e9aeMX8SUtpi1KM&usqp=CAU" alt="" data-align="inline" width="265">
 
-##### Frame es una clase en la biblioteca de Java Swing que representa una ventana de nivel superior en una interfaz gráfica de usuario (GUI). La ventana JFrame puede contener y organizar otros componentes de Swing, como botones, etiquetas, campos de texto, paneles y más.
+##### JFrame es una clase en la biblioteca de Java Swing que representa una ventana de nivel superior en una interfaz gráfica de usuario (GUI). La ventana JFrame puede contener y organizar otros componentes de Swing, como botones, etiquetas, campos de texto, paneles y más.
 
 ---
 
