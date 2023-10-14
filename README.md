@@ -2,13 +2,13 @@
 
 ![JFrame](https://www.onworks.net/imagescropped/defaulticon.png_3.webp) <img title="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTjottlnIzfylXY6zxHx-M8YdpnoMw-oxaPSU58H5X1jrNs5vmCK0e9aeMX8SUtpi1KM&usqp=CAU" alt="" data-align="inline" width="265">
 
-##### JFrame es una clase en la biblioteca de Java Swing que representa una ventana de nivel superior en una interfaz gráfica de usuario (GUI). La ventana JFrame puede contener y organizar otros componentes de Swing, como botones, etiquetas, campos de texto, paneles y más.
+#### JFrame es una clase en la biblioteca de Java Swing que representa una ventana de nivel superior en una interfaz gráfica de usuario (GUI). La ventana JFrame puede contener y organizar otros componentes de Swing, como botones, etiquetas, campos de texto, paneles y más.
 
 ---
 
-[Estructura basica](https://github.com/meditux27/JFrame-JavaSwing/blob/main/principal/MiVentana.java)
+:book: **Las características más importantes de un `JFrame` en Swing son las siguientes:**
 
-Algunas características clave de `JFrame`:
+
 
 1. **Ventana Principal**: `JFrame` generalmente se utiliza como la ventana principal de una aplicación de escritorio. Cuando creas un objeto `JFrame`, estás creando una ventana en la que los usuarios pueden interactuar con tu aplicación.
 
@@ -24,11 +24,73 @@ Algunas características clave de `JFrame`:
 
 7. **Cierre de la Aplicación**: Cuando un JFrame se cierra, puedes controlar si la aplicación completa debe cerrarse o simplemente ocultarse. Esto se puede configurar utilizando métodos como `setDefaultCloseOperation()`.
 
-Algunos de los métodos más comunes de la clase `JFrame` en Java Swing, que se utilizan con frecuencia para configurar y trabajar con ventanas en aplicaciones gráficas son los siguientes:
+
 
 ---
 
-> :beginner: setTitle
+:clipboard: **Pasos para implementar JFrame**
+
+1. Importa las clases necesarias:
+
+Asegúrate de importar las clases necesarias de la biblioteca Swing en tu archivo Java para trabajar con JFrame.
+
+```java
+import javax.swing.JFrame;
+```
+
+2. Crea un objeto JFrame:
+
+Crea una instancia de la clase JFrame para representar tu ventana.
+
+```java
+JFrame frame = new JFrame("Mi Titulo");
+```
+
+3. Configura las propiedades del `JFrame` (opcional):
+
+Puedes configurar diversas propiedades del `JFrame`, como el cierre de la ventana al hacer clic en la "X" de la esquina superior derecha, el tamaño de la ventana, la ubicación inicial, etc.
+
+```java
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Cierre de la ventana
+frame.setSize(800, 600);//Tamaño inicial de la ventana
+frame.setLocationRelativeTo(null); // Centra la ventana en la pantalla
+```
+
+4. Agrega componentes (opcional):
+
+Si deseas agregar componentes, como botones, etiquetas, campos de texto, etc., a la ventana, puedes hacerlo usando métodos como `add()`.
+
+```java
+// Ejemplo: Agregar un botón a la ventana
+frame.add(new JButton("Mi Botón"));
+```
+
+5. Hacer visible la ventana:
+
+Debes hacer que la ventana sea visible para que los usuarios puedan interactuar con ella.
+
+```java
+frame.setVisible(true);
+```
+
+6. Gestión de eventos (opcional):
+
+Si deseas que la ventana reaccione a eventos, como clics de botones o cierre de ventana, puedes agregar controladores de eventos.
+
+```java
+// Ejemplo: Agregar un ActionListener para manejar eventos de botones
+myButton.addActionListener(new ActionListener() {
+    public void actionPerformed(ActionEvent e) {
+        // Código para manejar el evento
+    }
+});
+```
+
+:coffee:[Estructura basica](https://github.com/meditux27/JFrame-JavaSwing/blob/main/principal/MiVentana.java)
+
+---
+
+> :beginner: **setTitle**
 
 - Descripción
 
@@ -36,7 +98,9 @@ Establece el título de la ventana
 
 - Sintaxis
 
+```java
 frame.setTitle(" texto ");
+```
 
 - Nota
 
@@ -48,7 +112,7 @@ Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar
 <sub>Agregar setTitle </sub>  
 `frame.setTitle("Titulo de la ventana");`
 
-- Ejemplo
+- Ejemplo:coffee:
 
 [ setTitle]( https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetTitleExample.java)
 
@@ -56,7 +120,7 @@ Para el uso del metodo setTitle se debe instanciar JFrame, posteriormente llamar
 
 ---
 
-> :beginner: setSize(int width, int height)
+> :beginner: **setSize()**
 
 - Descripción
 
@@ -64,7 +128,9 @@ Establece el tamaño inicial de la ventana en píxeles
 
 - Sintaxis
 
+```java
 frame.setSize(800,600);
+```
 
 - Nota
 
@@ -76,13 +142,13 @@ Crear un JFrame
 Agregar setTitle  
 `frame.setSize(400,400);`
 
-- Ejemplo
+- Ejemplo:coffee:
 
 [setSize](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JFrameSetSize.java)
 
 ---
 
-> :beginner: setDefaultCloseOperation(int operation)
+> :beginner: **setDefaultCloseOperation()**
 
 - Descripción
 
@@ -90,7 +156,9 @@ Configura el comportamiento de cierre de la ventana
 
 - Sintaxis
 
+```java
 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+```
 
 - Nota
 
@@ -102,13 +170,13 @@ Crear un JFrame
 Agregar setTitle  
 `frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);`
 
-- Ejemplo
+- Ejemplo:coffee:
 
 [setDefaultCloseOperation](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/setDefaultCloseOperation.java)
 
 ---
 
-> :beginner: setVisible
+> :beginner: **setVisible**
 
 - Descripción
 
@@ -116,7 +184,9 @@ Hace que la ventana sea visible o invisible
 
 - Sintaxis
 
+```java
 frame.setVisible(boolean);
+```
 
 - Nota
 
@@ -128,7 +198,7 @@ Crear un JFrame
 Agregar setTitle  
 `frame.setVisible(true);`
 
-- Ejemplo
+- Ejemplo:coffee:
 
 [setVisible](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/setVisible.java)
 
@@ -136,7 +206,7 @@ Agregar setTitle
 
 ---
 
-> :beginner: setLayout
+> :beginner: **setLayout**
 
 - Descripción
 
@@ -145,31 +215,34 @@ Establece el administrador de diseño para organizar los componentes dentro del 
 - Sintaxis
 1. Creando la instancia de layout manager y asignando el nombre de la variable donde se guardo la instancia
 
-`GridLayout diseno = new GridLayout(3, 3);`
-
-`panel.setLayout(diseno);`
+```java
+GridLayout diseno = new GridLayout(3, 3);
+panel.setLayout(diseno);
+```
 
 2. Agregando directamente al panel mediante la instancia
 
-`JPanel panel = new JPanel(new GridLayout(2, 3));`
+```java
+JPanel panel = new JPanel(new GridLayout(2, 3));
+```
 
 - Nota
 
 Entre los mas utilizados se encuentran `FlowLayout|GridLayout|BorderLayout`
 
-1. FlowLayout
+1. **FlowLayout**
 
 *Organiza los componentes en una fila horizontal o vertical, ajustándolos automáticamente a medida que se agregan. Es útil para diseños simples de una fila o una columna de componentes.*
 
-2. *BorderLayout*
+2. ***BorderLayout***
 
 *Divide el contenedor en cinco áreas: norte, sur, este, oeste y centro. Cada área puede contener un solo componente, y los componentes se expanden para llenar su área asignada.*
 
-3. *GridLayout*
+3. ***GridLayout***
 
 *Organiza los componentes en una cuadrícula de filas y columnas de tamaño fijo. Todos los componentes en un GridLayout tienen el mismo tamaño.*
 
-- Ejemplo
+- Ejemplo:coffee:
 
 [FlowLayout](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/FlowLayoutExample.java)
 
@@ -179,7 +252,7 @@ Entre los mas utilizados se encuentran `FlowLayout|GridLayout|BorderLayout`
 
 ---
 
-> :beginner: add(Component comp)
+> :beginner: **add()**
 
 - Descripción
 
@@ -187,7 +260,9 @@ Agrega un componente (como un JPanel, JButton, etc.) al JFrame
 
 - Sintaxis
 
+```java
 frame.add(new JButton("Mi Botón"));
+```
 
 - Nota
 
@@ -199,13 +274,13 @@ Crear un JFrame
 Agregar setTitle  
 `frame.add(componente);`
 
-- Ejemplo
+- Ejemplo:coffee:
 
 [add ](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/addComponentExample.java)
 
 ---
 
-> :beginner: pack
+> :beginner: **pack**
 
 - Descripción
 
@@ -213,19 +288,21 @@ Ajusta automáticamente el tamaño de la ventana para que se ajuste a los compon
 
 - Sintaxis
 
+```java
 frame.pack( );
+```
 
 - Nota
 
 Para el uso del metodo `pack ();`, es conveniente utilizar layout manager para que los componentes tenga una administración del espacio interno y posteriormente utilizar el metodo `pack ();` al final del listado de componentes agregados a JFrame 
 
-- Ejemplo
+- Ejemplo:coffee:
 
-[pack () ;](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JframePack.java)
+[pack ()](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JframePack.java)
 
 ---
 
-> :beginner: setResizable
+> :beginner: **setResizable**
 
 - Descripción
 
@@ -233,7 +310,9 @@ Permite o impide que el usuario cambie el tamaño de la ventana.
 
 - Sintaxis
 
+```java
 frame.setResizable(boolean);
+```
 
 - Nota
 
@@ -245,13 +324,13 @@ Crear un JFrame
 Agregar setTitle  
 `frame.setResizable(true);`
 
-- Ejemplo
+- Ejemplo:coffee:
 
 [setResizable](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/JframeSetResizable.java)
 
 ---
 
-> :beginner: setLocationRelativeTo
+> :beginner: **setLocationRelativeTo**
 
 - Descripción
 
@@ -259,7 +338,9 @@ Establece la posición al generar la ventana
 
 - Sintaxis
 
-.setLocationRelativeTo(null);
+```java
+frame.setLocationRelativeTo(null);
+```
 
 - Nota
 
@@ -271,13 +352,13 @@ Crear un JFrame
 Agregar setTitle  
 `frame.setLocationRRelativeTo(null);`
 
-- Ejemplo
+- Ejemplo:coffee:
 
 [setLocationRelativeTo](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/setLocationRelativeTo.java)
 
 ---
 
-> :beginner: addWindowListener
+> :beginner: **addWindowListener**
 
 - Descripción
 
@@ -285,7 +366,9 @@ Se utiliza para registrar un objeto que escuchará eventos relacionados con la v
 
 - Sintaxis
 
+```java
 frame.add(new JButton("Mi Botón"));
+```
 
 - Nota
 
@@ -311,7 +394,7 @@ Para usar `addWindowListener`, primero debes agregar una instancia de la clase c
 
 A continuación se proporcionar una implementación de sobrecarga para los métodos que desees manejar ejemplo: `windowClosing(WindowEvent e){ }`
 
-- Ejemplo
+- Ejemplo:coffee:
 
 [windowOpened(WindowEvent e)](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploWindowOpened.java)
 
@@ -329,7 +412,7 @@ A continuación se proporcionar una implementación de sobrecarga para los méto
 
 ---
 
-> :beginner: dispose
+> :beginner: **dispose**
 
 - Descripción
 
@@ -337,7 +420,9 @@ Se utiliza para liberar los recursos asociados a una ventana o diálogo y cerrar
 
 - Sintaxis
 
+```java
 frame.dispose();
+```
 
 - Nota
 
@@ -351,6 +436,6 @@ Crear un JFrame
 Agregar setTitle  
 `frame.dispose();`
 
-- Ejemplo
+- Ejemplo:coffee:
 
 [dispose](https://github.com/meditux27/JFrame-JavaSwing/blob/main/Example/EjemploDispose.java)
